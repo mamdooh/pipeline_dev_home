@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pipeline-homepage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pipeline-homepage
+  template:
+    metadata:
+      labels:
+        app: pipeline-homepage
+    spec:
+      containers:
+        - name: pipeline-homepage
+          image: modrekregistry.azurecr.io/pipeline_dev_home:latest
+          ports:
+            - containerPort: 8000
