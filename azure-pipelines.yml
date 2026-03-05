@@ -8,7 +8,7 @@ variables:
   imageTag: '$(Build.BuildId)'
   acrLoginServer: 'modrekregistry.azurecr.io'
   imageRepo: 'pipeline_dev_home'
-  aksNamespace: 'default'
+  aksNamespace: 'uae-modrek-stock-v2-namespace'
   aksServiceConnection: 'Pipeline-Dev_AKS-Conn'
 
 steps:
